@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: 'Satisfy-Regular';
+    src: url(fontes/Satisfy-Regular.ttf);
+    font-weight: 650;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(250, 229, 245);
+    color: rgb(47, 47, 56);
+    font-size: 19px;
+}
+
+/*header*/
+
+
+h1 {
+    font-family: Satisfy-Regular;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid rgb(92, 92, 92);
+}
+
+
+.header {
+    background-image: linear-gradient(45deg, rgb(57, 182, 255), rgb(47, 255, 134), rgb(255, 94, 255), rgb(245, 255, 100));
+    border-bottom: 1px solid rgb(92, 92, 92);
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.nav-bar {
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 150px;
+}
+
+/*main*/
+
+h3, p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 30px;
+    padding: 15px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#information {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 15px;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image {
+    border-radius: 120px;
+}
+
+section.facts img {
+    border-radius: 60px;
+}
+
+.facts {
+    display: flex;
+    padding: 70px 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.conclusion {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+    font-size: 25px;
+}
+
+/*footer*/
+
+footer {
+    background-color: rgb(47, 47, 56);
+    border-top: 5px solid transparent;
+    border-image: linear-gradient(45deg,rgb(57, 182, 255), rgb(47, 255, 134), rgb(255, 94, 255), rgb(245, 255, 100));
+    border-image-slice: 9;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(201, 151, 190);
+}
+
+a:hover {
+    color: rgb(94, 94, 94);
+}
+
+.gif {
+    border-radius: 45px;
+    width: 200px;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+div.links-contact {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+div.links-contact a img {
+    height: 40px;
+}
+
+.credits {
+    font-size: 13px;
+    text-align: center;
+}
