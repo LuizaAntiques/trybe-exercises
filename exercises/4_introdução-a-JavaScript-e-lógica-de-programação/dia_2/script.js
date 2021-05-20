@@ -72,15 +72,54 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 //exercicio 8
 
-let array = [];
-for (let number = 1; number < 26; number += 1) {
-  array.push(number);
-};
+//let array = [];
+//for (let number = 1; number < 26; number += 1) {
+//  array.push(number);
+//};
 //console.log(array);
 
 //exercicio 9
 
-for (let i = 0; i < array.length; i += 1) {
-  let conta = array[i] / 2;
-  console.log(conta);
+//for (let i = 0; i < array.length; i += 1) {
+//  let conta = array[i] / 2;
+//  console.log(conta);
+//};
+
+//BONUS 1
+
+//for (let index = 1; index < numbers.length; index += 1) {
+//  for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+//    if (numbers[index] < numbers[secondIndex]) {
+//      let position = numbers[index];
+//      numbers[index] = numbers[secondIndex];
+//      numbers[secondIndex] = position;
+//    }
+//  }
+//}
+//console.log(numbers);
+
+//BONUS 2
+
+//for (let index = 1; index < numbers.length; index += 1) {
+//  for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+//    if (numbers[index] > numbers[secondIndex]) {
+//      let position = numbers[index];
+//      numbers[index] = numbers[secondIndex];
+//      numbers[secondIndex] = position;
+//    }
+//  }
+//}
+//console.log(numbers);
+
+//BONUS 3
+let novoArray = [];
+
+for (let index = 0; index < numbers.length; index += 1) {
+  if (index +1 === numbers.length) {
+    novoArray.push(numbers[index] * 2);
+  } else {
+    novoArray.push(numbers[index] * numbers[index + 1]);
+  };
 };
+
+console.log(novoArray);
