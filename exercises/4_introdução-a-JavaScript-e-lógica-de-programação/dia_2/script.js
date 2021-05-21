@@ -6,6 +6,11 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //  console.log(numbers[index]);
 //};
 
+
+for (number of numbers) {
+  console.log(number);
+}
+
 //exercicio 2
 
 //let resultado = 0;
@@ -112,14 +117,14 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //console.log(numbers);
 
 //BONUS 3
-let novoArray = [];
+//let novoArray = [];
 
-for (let index = 0; index < numbers.length; index += 1) {
-  if (index +1 === numbers.length) {
-    novoArray.push(numbers[index] * 2);
-  } else {
-    novoArray.push(numbers[index] * numbers[index + 1]);
-  };
-};
+//for (let index = 0; index < numbers.length; index += 1) {
+//  if (index +1 === numbers.length) {
+//    novoArray.push(numbers[index] * 2);
+//  } else {
+//    novoArray.push(numbers[index] * numbers[index + 1]);
+//  };
+//};
 
-console.log(novoArray);
+//console.log(novoArray);
