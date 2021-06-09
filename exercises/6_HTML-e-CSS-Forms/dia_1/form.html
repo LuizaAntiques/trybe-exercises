@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Exercicios 6.1</title>
+</head>
+<body>
+  <form action="" method="GET" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Seus Dados</legend>
+      <label for="input-name">Nome: </label>
+      <input type="text" name="name" id="input-name" maxlength="40" placeholder="Seu nome aqui" required>
+      <br>
+      <label for="input-email">E-mail: </label>
+      <input type="email" name="email" id="input-email" maxlength="50" placeholder="Seu e-mail aqui" required>
+      <br>
+      <label for="input-cpf">CPF: </label>
+      <input type="text" placeholder="Somente números" id="input-cpf" name="cpf" maxlength="11" required>
+      <br>
+      <label for="input-adress">Endereço: </label>
+      <input name="adress" id="input-adress" type="text" maxlength="200" placeholder="Seu endereço aqui" required>
+      <br>
+      <label for="input-city">Cidade: </label>
+      <input type="text" name="city" id="input-city" maxlength="28" placeholder="Sua cidade aqui" required>
+      <br>
+      <label for="input-state">Estado: </label>
+        <select name="state" id="input-state" placeholder="Selecione" required></select>
+      </label>
+      <br>
+      <Label for="type1">Mora em:
+        <input type="radio" name="type" id="type1" checked required> Casa
+      </label>
+      <Label for="type2">
+        <input type="radio" id="type2" name="type" required> Apartamento
+      </Label>
+    </fieldset>
+    <fieldset>
+      <label for="input-cv">Resumo do curriculo: 
+        <textarea name="cv" id="input-cv" cols="25" rows="5" maxlength="1000" placeholder="Digite sobre suas experiências" required></textarea>
+      </label>
+      <label for="cargo"></label>
+    </fieldset>
+  </form>
+  
+</body>
+</html>
