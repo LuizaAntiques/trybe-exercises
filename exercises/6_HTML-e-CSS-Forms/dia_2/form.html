@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario-curriculo</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+<header class="form-header z-depth-4 teal lighten-3">
+    <h1>Formulário para cadastro de currículo</h1>
+    <p>Preencha todos os campos abaixo.</p>
+</header>
+<main>
+    <form id="cv-form">
+        <div class="form-row">
+            <fieldset class="z-depth-4">
+                <div class="line-content input-field">
+                    <label for="name">Nome: </label>
+                    <input type="text" class="validate" name="name" id="name" maxlength="40" required>
+                </div>
+                <div class="line-content input-field">
+                    <label for="email">Endereço de e-mail: </label>
+                    <input id="email" type="email" class="validate email-input" name="email" maxlength="50" required>
+                </div>
+                <div class="line-content input-field">
+                    <label for="cpf-number">CPF: </label>
+                    <input type="text" name="cpf" id="cpf-number" class="validate" maxlength="11" required>
+                </div>
+                <div class="line-content input-field">
+                    <label for="address">Endereço: </label>
+                    <input type="text" name="address" class="validate" id="address" maxlength="200" required>
+                </div>
+                <div class="line-content input-field">
+                    <label for="city">Cidade: </label>
+                    <input type="text" name="city" class="validate" id="city" maxlength="200" required>
+                </div>
+                <div class="line-content input-field">
+                    <label for="state">Estado: </label>
+                    <select name="state" id="state"  required>
+                       <option disabled selected value>Selecione seu estado</option>
+                    </select>
+                </div>
+                <div class="line-content">
+                    <label for="houseType">Tipo de imóvel:
+                        <label for="house">
+                            <input type="radio" name="houseType" id="house" value="house" required>Casa
+                        </label>
+                        <label for="apartment">
+                            <input type="radio" name="houseType" id="apartment" value="apartment" required>Apartamento
+                        </label>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="z-depth-4">
+                <div class="line-content input-field">
+                    <label for="resume" class="label-textarea">Resumo do currículo: </label>
+                    <textarea id="resume" name="resume" class="validate" maxlength="1000" cols="100" rows="5" required></textarea>
+                </div>
+                <div class="line-content input-field">
+                    <label for="role">Cargo: </label>
+                    <input type="text" name="role" class="validate" id="role" maxlength="40" required>
+                </div>
+                <div class="line-content input-field">
+                    <label for="roleDescription">Descrição do cargo: </label>
+                    <input type="text" id="roleDescription" class="validate" name="roleDescription" required>
+                </div>
+                <div class="line-content input-field">
+                    <label for="startDate">Data de início: </label>
+                    <input type="text" class="input-data validate" id="startDate" name="startDate" value="" required>
+                </div>
+            </fieldset>
+                <button class="submit-button btn waves-effect waves-light" type="submit">Enviar<i class="material-icons right">send</i></button>
+                <button class="waves-effect waves-teal btn-flat" type="button">Limpar</button>
+        </div>
+    </form>
+</main>
+<section class="form-data"></section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="script.js"></script> 
+</body>
+
+</html>
